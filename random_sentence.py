@@ -26,4 +26,4 @@ if __name__ == '__main__':
     translation = translator.translate(random_sentence())
     print(translation)
     
-# make words.txt a python lis
+# make words.txt a python list
