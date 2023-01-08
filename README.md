@@ -1,9 +1,8 @@
-# Project Title
+# Random Sentence Generator
 
 ## Table of Contents
 
 - [About](#about)
-- [Getting Started] 
 - [Usage] Generating random sentences
 
 ## About <a name = "about"></a>
