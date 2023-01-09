@@ -8,7 +8,7 @@
 ## About <a name = "about"></a>
 
 <p>A python program that generates random sentences based on the 1000 most used English words</p>
-<p>Aimed for inspiration and draw and guess games</p>
+<p>Designed for providing inspiration and draw and guess games</p>
 
 ## Usage <a name = "usage"></a>
 
