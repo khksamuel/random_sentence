@@ -29,19 +29,24 @@ class grammar_fix:
         self.s_fix()
         
     def an_fix(self):
-        for i in range(0, len(self.sentence)):
-            if (self.sentence[i] == 'a') and (self.sentence[i+1] in ['a', 'e', 'i', 'o', 'u']):
-                    self.sentence[i] = 'an'
+        for i in range(0, len(self.sentence) - 1):
+            if (self.sentence[i] == 'a') and (self.sentence[i + 1][0] in 'aeiou'):
+                self.sentence[i] = 'an'
     
     def s_fix(self):
-        for i in range(0, len(self.sentence)):
+        for i in range(0, len(self.sentence) - 2):
             if (self.sentence[i] == 'some'):
                 self.sentence[i + 2] += 's'
-    def get_sentence(self):
+                
+    def get_sentence(self) -> str:
         return ' '.join(self.sentence)
 
 if __name__ == '__main__':
     sentence = random_sentence()
     # translartor = Translator(to_lang="zh", from_lang="en")
     # translated = translartor.translate((sentence))
-    print(sentence)
+    # print(sentence)
+    for i in range(0, 1000):
+        sentence = random_sentence()
+        if sentence[0] == 'A':
+            print(sentence)
